@@ -1,0 +1,9 @@
+{
+	"conf":"akiyatkin\\start\\Start",
+	"sys-steps":{
+		"Выполнить установку системы":"-update/"
+	},
+	"steps":{
+
+	}
+}

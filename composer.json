@@ -1,0 +1,9 @@
+{
+	"name": "akiyatkin/start",
+	"autoload": {
+		"psr-4": { "akiyatkin\\start\\": "" }
+	},
+	"require":{
+		"infrajs/rest":"~1"
+	}
+}
