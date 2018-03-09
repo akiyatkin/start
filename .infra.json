@@ -1,9 +1,13 @@
 {
 	"conf":"akiyatkin\\start\\Start",
-	"sys-steps":{
-		"Выполнить установку системы":"-update/"
-	},
-	"steps":{
-
+	"startsteps":{
+		"Сделать кэш для тестировщика устаревшим":{
+			"href":"/-start/start",
+			"func":"Once::setStartTime()"
+		},
+		"Выполнить установку системы без удаления кэша":{
+			"href":"/-update/",
+			"func":"Update::exec()"
+		}
 	}
 }
