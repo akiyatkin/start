@@ -27,8 +27,7 @@ class Start
         $conf = Config::get();
         $startsteps = $conf['start']['startsteps'];
         foreach ($conf as $name => $ext) {
-            Start::add($startsteps, $name);
-            
+            Start::add($startsteps, $name);  
         }
         return $startsteps;
     }

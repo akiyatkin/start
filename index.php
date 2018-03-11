@@ -2,7 +2,9 @@
 namespace akiyatkin\start;
 use infrajs\rest\Rest;
 use infrajs\access\Access;
-use akiyatkin\boo\Once;
+use infrajs\config\Config;
+use akiyatkin\boo\Cache;
+
 
 Access::debug(true);
 
@@ -12,7 +14,7 @@ Rest::get( function () {
 	$html = Rest::parse('-start/layout.tpl', $data);
 	echo $html;
 },'start', function(){
-	Once::setStartTime(); //Тестировщик будет обновлять кэш на сайте
+	Cache::setStartTime(); //Тестировщик будет обновлять кэш на сайте
 	echo 'Установлено новое начало времён<br>';
-	echo Once::getStartTime();
+	echo Cache::getStartTime();
 });
