@@ -2,7 +2,7 @@
 namespace akiyatkin\start;
 use infrajs\rest\Rest;
 use infrajs\access\Access;
-use infrajs\once\Once;
+use akiyatkin\boo\Cache;
 
 Access::debug(true);
 
