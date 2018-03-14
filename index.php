@@ -4,7 +4,7 @@ use infrajs\rest\Rest;
 use infrajs\access\Access;
 use akiyatkin\boo\Cache;
 
-Access::debug(true);
+Access::test(true);
 
 Rest::get( function () {
 	$data = array();
