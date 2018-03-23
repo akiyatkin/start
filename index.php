@@ -7,6 +7,7 @@ use infrajs\update\Update;
 use infrajs\nostore\Nostore;
 
 Access::test(true);
+Nostore::on();
 
 Rest::get( function () {
 	$data = array();
