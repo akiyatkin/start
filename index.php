@@ -4,6 +4,7 @@ use infrajs\rest\Rest;
 use infrajs\access\Access;
 use akiyatkin\boo\Cache;
 use infrajs\update\Update;
+use infrajs\nostore\Nostore;
 
 Access::test(true);
 
